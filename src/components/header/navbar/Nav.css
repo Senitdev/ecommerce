@@ -1,0 +1,99 @@
+body{
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.navBar{
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    padding: 30px;
+   border: 1px solid rgb(236, 223, 223); 
+    margin-top: 40px;
+}
+.btn-allcategore{
+    height: 80px;
+    width: 200px;
+    background-color:#3BB77E;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Times New Roman', 'Times, serif';
+    border-radius: 5px;
+    position: absolute;
+    bottom: 3px;
+    z-index: 0;
+    border: 1px solid #3BB77E;
+}
+.btn-allcategore:hover{
+    background-color:#79e2b1;
+    border: 1px solid #3BB77E;
+}
+.navBar>ul{
+    display: flex;
+     float: right;
+     width: 80%;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: -1;
+    cursor: pointer;
+   
+}
+.navBar li:hover{
+    background-color: white;
+    color:rgb(142, 238, 142);
+    font-weight: bold;
+}
+
+.iconeDown{
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    
+}
+.iconehot{
+    margin: 5px;
+}
+/*Design des menus Home, vendore, shop,blog*/
+.dropdownHome,.dropdownShop,.dropdownVendor,.dropdownBlog{
+    width: 250px;
+    height: auto;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 3px rgb(160, 158, 158,02);
+    position: absolute;
+    top: 60px;
+    margin: 5px;
+    cursor: pointer;
+
+}
+/*DropDowmenu Home*/
+.dropdownHome{
+    left: 410px;
+    top: 60px;
+}
+/*DropDown Shop*/
+.dropdownShop{
+    left: 650px;
+    top: 80px;
+}
+/**dropDownVendor*/
+.dropdownVendor{
+    left: 750px;
+    top: 80px;
+}
+/**dropDownBlog*/
+.dropdownBlog{
+    right: 100px;
+    top: 83px;
+}
+/*Mega Menu Drop Down*/
+.dropdownMega{
+    width: 95%;
+    position: absolute;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 5px;
+    top: 100px;
+    box-shadow: 3px 3px 6px 2px rgb(160, 158, 158,02);
+}

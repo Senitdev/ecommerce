@@ -1,0 +1,17 @@
+.megamenu{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    background-color: white;
+    text-align: start;
+    cursor: pointer;
+}
+.titre{
+    font-size: 20px;
+    color: rgb(121, 197, 121);
+    font-family: 'Times New Roman', Times, serif;
+}
+.megamenu1,.megamenu2,.megamenu3{
+    width: 300px;
+    margin: 5px;
+}
