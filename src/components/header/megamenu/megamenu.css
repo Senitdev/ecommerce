@@ -15,3 +15,60 @@
     width: 300px;
     margin: 5px;
 }
+.megamenu4{
+    width: 500px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: rgb(238, 207, 150);
+    height: 300px;
+    margin: 5px;
+    display: flex;
+}
+.logoMenu{
+    object-fit: fill;
+    width: 65%;
+    background-image: none;
+}
+.option{
+    width: 50%;
+    padding-top: 40px;
+    
+}
+.titreH1{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: gray;
+    padding-top: 10px;
+    text-transform:uppercase;
+}
+/*les li au hover*/
+.titreH1:hover,.titreH2:hover,.titreH3:hover{
+ background: rgb(238, 207, 150);
+ cursor:default;
+}
+.titreH2{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.titreH3{
+    font-size: 20px;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+}
+.btnShow{
+    width: 115px;
+    height: 40px;
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+    background-color: green;
+    border: 1px solid green;
+}
+.btnShow:hover{
+    background-color: rgb(230, 131, 131);
+    color: white;
+    font-weight: bold;
+    border: 1px solid rgb(230, 131, 131);
+}

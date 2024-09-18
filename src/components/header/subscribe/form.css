@@ -1,0 +1,35 @@
+form{
+    position:absolute;
+    top: 250px;
+    left:20px;
+}
+input {
+    border: 1px solid #dbd9d9;
+    border-radius: 30px;
+    height: 63px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-left: 20px;
+    font-size: 16px;
+    width: 325px;
+    background-color: white;
+}
+input:focus{
+    border: 1px solid white;
+    outline: none;
+}
+.btn-subscribe{
+    width: 120px;
+    height: 64px;
+    color: white;
+    background-color: green;
+    border-radius: 30px;
+    margin: 5px;
+    position: relative;
+    left: 200px;
+    bottom: 69px;
+    border: 2px solid white;
+}
+.btn-subscribe:hover{
+    background-color: green;   
+}

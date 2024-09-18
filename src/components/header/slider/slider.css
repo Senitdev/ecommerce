@@ -1,0 +1,66 @@
+.HomeSlider{
+    width: 100%;
+    height: 370px;
+    border-radius: 10px;
+    position: relative;
+    top:100px;
+    z-index: 0;
+    background-color: rgb(247, 203, 203);
+    padding: 5px;
+}
+.btn-back{
+    position: absolute;
+    background-color: green;
+    top: 310px;
+    left:600px;
+    border-radius: 5%;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+.btn-next{
+    top: 310px;
+    left:625px; 
+    position: absolute;
+    border-radius: 10%;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+.imageSlide1,.imageSlide2{
+    object-fit:cover;
+    position: absolute;
+    width: 80%;
+    right: 50px;
+}
+#slide1Text1{
+font-size: 50px;
+font-weight: bold;
+padding-top: 30px;
+padding-left: 15px;
+}
+#slide1Text2{
+    color: rgb(116, 108, 108);
+    font-size: 20px;
+    padding-left: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.menuSlider{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 370px;
+    
+}
+.slideText1{
+    width: 45%;
+
+}
+.slideImage1{
+    width: 50%;
+    
+}

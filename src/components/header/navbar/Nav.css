@@ -37,9 +37,9 @@ body{
     cursor: pointer;
    
 }
-.navBar li:hover{
+.navBar>li:hover{
     background-color: white;
-    color:rgb(142, 238, 142);
+    color:green;
     font-weight: bold;
 }
 
@@ -53,7 +53,7 @@ body{
     margin: 5px;
 }
 /*Design des menus Home, vendore, shop,blog*/
-.dropdownHome,.dropdownShop,.dropdownVendor,.dropdownBlog{
+.dropdownHome,.dropdownShop,.dropdownVendor,.dropdownBlog,.dropdownPages{
     width: 250px;
     height: auto;
     background-color: white;
@@ -86,6 +86,12 @@ body{
     right: 100px;
     top: 83px;
 }
+/**DropdownPages*/
+.dropdownPages{
+    right: 20px;
+    top: 83px;
+    padding: 5px;
+}
 /*Mega Menu Drop Down*/
 .dropdownMega{
     width: 95%;
@@ -96,4 +102,21 @@ body{
     margin: 5px;
     top: 100px;
     box-shadow: 3px 3px 6px 2px rgb(160, 158, 158,02);
+}
+/**Support center*/
+.supportCenter{
+    color: #3BB77E;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+   position: relative;
+   bottom:25px;
+}
+.iconeCenter{
+    margin: 5px;
+}
+#support{
+    font-size: 12px;
+    color: rgb(150, 141, 141);
 }

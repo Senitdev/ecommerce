@@ -17,6 +17,7 @@ import logo from '../../assets/images/logo.svg';
 import "../header/header.css";
 import Select from "../selectDrop/Select";
 import Nav from "./navbar/Nav";
+import { HomeSlider } from "./slider/HomeSlider";
 const Headers=()=>{
   const[openDropdownMenu,setOpenDropdownMenu]=useState(false);
   const handleClicAnywhere=()=>{
@@ -51,9 +52,8 @@ const Headers=()=>{
               <li><span className="bgCompare"><Badge bg="success">3</Badge></span><img src={compart} alt="logo compare" className="logos"/>Compare</li>
               <li><span className="bgCompare"><Badge bg="success">6</Badge></span><img src={wishlist} alt="logo heart" className="logos"/>Wislist</li>
               <li><span className="bgCompare"><Badge bg="success">2</Badge></span><img src={cart} alt="Shoping logo" className="logos"/>Cart</li>
-              <li onClick={()=>setOpenDropdownMenu(!openDropdownMenu)}><img src={account} alt="Icone user" className="logos"/>Account</li>
+              <li onMouseOver={()=>setOpenDropdownMenu(!openDropdownMenu)}><img src={account} alt="Icone user" className="logos"/>Account</li>
             </ul>
-        
             </div> 
            
             {openDropdownMenu ===true && 
@@ -69,6 +69,8 @@ const Headers=()=>{
             </div>
             
 }
+{/*slider start*/}
+<HomeSlider/>
       </div>
       
      

@@ -78,25 +78,24 @@ header .headerSearch .searchIcon{
     right: -20px;
     top: -10px;
 }
-.dropdownmenuUser ul{
-    width:200px;
-    height: fit-content;
+.dropdownmenuUser>ul{
     display: flex;
-    flex-direction: column;
-    float: right;
-    position: relative;
-    top:-25px;
+    flex-direction:column;
+    float:right;
+    position: absolute;
+    top:90px;
     box-shadow: 5px 5px 5px 3px rgb(160, 158, 158,02);
     border-radius: 5px;
-    left: -15px;
-    z-index: 1100;
+    right:10px;
+    z-index: 150;
     background-color: white;
+    width: 200px;
 }
 .icone{
     padding: 5px;
     margin: 5px;
 }
-.dropdownmenuUser li:hover{
+.dropdownmenuUser>li:hover{
     background: white;
     color: rgb(188, 207, 188);
     cursor: pointer;
