@@ -1,4 +1,5 @@
 import { createBrowserRouter, Outlet } from "react-router-dom";
+import Headers from "../header/Headers";
 import { About } from "../pages/About";
 import { Account } from "../pages/Account";
 import { Contact } from "../pages/Contact";
@@ -17,11 +18,11 @@ const AppLayout=()=>{
 export const MesRoutes=createBrowserRouter([
 {
     path:"/",
-    Element:<AppLayout/>,
+    Element:<Headers/>,
     errorElement:<Page404/>,
     Children:[
         {
-            path:"about",
+            path:"/about",
             Element:<About/>
         },
         {

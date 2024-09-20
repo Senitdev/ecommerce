@@ -14,6 +14,7 @@ import iconeHeart from '../../assets/images/iconDropdown/suit-heart.svg';
 import searIcon from '../../assets/images/icons8-chercher.svg';
 
 import logo from '../../assets/images/logo.svg';
+import { SlideCategorie } from "../carteSlide/SlideCategorie";
 import "../header/header.css";
 import Select from "../selectDrop/Select";
 import Nav from "./navbar/Nav";
@@ -71,12 +72,14 @@ const Headers=()=>{
 }
 {/*slider start*/}
 <HomeSlider/>
+<SlideCategorie/>
       </div>
       
      
     </div>
     </ClickAwayListener>
     </header>
+  
     <Nav/>
     </>
 }
