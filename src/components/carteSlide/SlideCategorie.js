@@ -12,6 +12,7 @@ import blackplum from "../../assets/images/catslide/cat-4.png";
 import custard from "../../assets/images/catslide/cat-5.png";
 import "../carteSlide/slidecategorie.css";
 import CartProduct from '../carteproduct/CartProduct';
+import { PopularProduct } from '../popularProduct/PopularProduct';
 export const SlideCategorie=()=>{
     const liste=[
         {
@@ -123,6 +124,10 @@ export const SlideCategorie=()=>{
     </CarouselProvider>
     {/*Carte product composant */}
 <CartProduct/>
+{/*Popular Product*/}
+<PopularProduct/>
+{/*Best sells 
+<BestSellsProduct/>*/}
     </div>
     </>
 }

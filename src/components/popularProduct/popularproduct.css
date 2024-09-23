@@ -1,0 +1,166 @@
+.popularProduct{
+    width: 97%;
+    position: absolute;
+    top: 620px;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+.menuPopular{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content:right;
+    padding-bottom: 15px;
+    margin: 10px;
+
+}
+.menuPopular>li:hover{
+    color: green;
+    background-color: white !important;
+    padding-top: 10px;
+}
+#pTitre{
+    width: 20%;
+    font-size: 30px;
+    color: black;
+    font-weight: 700;
+}
+.cadrePopular{
+    display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+    position: absolute;
+    padding-top: 50px;
+}
+.cadrePopular1{
+    width: 220px;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    border: 1px solid gainsboro;
+}
+.imagePopular{
+    width: 100%;
+    margin: 5px;
+}
+.imagePopular:hover{
+    -webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+.titlePopular{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 10px;
+}
+.priceNormal{
+    position: absolute;
+    color: #3BB77E;
+    font-weight: 800;
+    padding-top: 10px;
+}
+.prixPromotion{
+    position: absolute;
+    color: gray;
+    font-weight: 700;
+    margin-left: 15px;
+    text-decoration:line-through;
+}
+.cadrePopular1:hover{
+    background-color: white;
+    color: black;
+}
+.btn_addShop{
+    position: relative;
+    left: 60%;
+    height: 32px;
+    background-color: #51f5a8;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    width: 80px;
+    border: 1px solid white;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.btn_addShop:hover{
+    background-color: #3BB77E;
+    -webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+.popular_categorie{
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:grey;
+    font-size: 15px;
+}
+.optionProduct{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    border: 1px solid rgb(143, 219, 143);
+    border-radius: 5px;
+    background-color: aqua;
+    padding-bottom: 10px;
+}
+
+.Iconepanier{
+    width: 40%;
+    position: relative;
+    padding: 2px;
+}
+#option{
+    width: 45%;
+    height: 50px;
+    position: relative;
+    top:130px;
+    left: 60px;
+    border-radius: 5px;
+   display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 10;
+    overflow: hidden;
+   
+}
+#option>img{
+    width: 50%;
+    overflow: hidden;
+}
+.iconeView{
+    width: 30px;
+    margin:2px;
+    position: absolute;
+    padding: 5px;
+}
+.cadrePopular1:hover{
+    #option{
+        border: 1px solid #3BB77E;
+        background-color: white;
+    }
+}
+.bestSells{
+   width: 100%;
+    background-color: blue;
+    position: absolute;
+    top: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.imagecadre{
+    width: 200px;
+    height: 200px;
+    border: 1px solid green;
+}
+CarouselProvider{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

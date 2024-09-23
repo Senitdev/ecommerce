@@ -6,22 +6,51 @@
     margin: 10px;
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 }
-.carteProduitTire{
-    width: 100%;
-    font-size: 18px;
+.carteProduitTitre{
+    font-weight: 900;
     font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    top: 100px;
+    color:black;
 }
 .imageProduit{
-width: 300px;
+width:100%;
+object-fit: cover;
+margin: 5px;
+padding-left: 10px;
+position: relative;
+bottom:25px;
 }
 .displayProduct{
+    width: 500px;
     display: flex;
     flex-direction: row;
     margin: 10px;
+    border-radius: 10px;
 }
 .btn_shop{
     width:10%;
+    padding: 5px;
     border-radius: 10px;
     position: absolute;
+    outline: none;
+    background-color: rgb(142, 204, 142);
+    color:white;
+    bottom: 20px;
+    border: 1px solid white;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.btn_shop:hover{
+    cursor: pointer;
+    background-color: rgb(252, 216, 173);
+    width: 12%;
+}
+.icone_btn{
+   padding: 5px;
+   color: white;
 }

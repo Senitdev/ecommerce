@@ -1,3 +1,4 @@
+import iconeBtn from "../../assets/images/banner/arrow-right-short.svg";
 import banner1 from "../../assets/images/banner/banner-1.png";
 import banner2 from "../../assets/images/banner/banner-2.png";
 import banner3 from "../../assets/images/banner/banner-3.png";
@@ -29,7 +30,7 @@ export default function CartProduct(){
     <ul className="carteproduct">
     {
         Product.map((prod)=>(
-            <li key={prod.id} className="displayProduct"><span className="carteProduitTire">{prod.titre}</span><img src={prod.image} className="imageProduit" alt="Logo"/><br/><button className="btn_shop">shop Now</button> </li>
+            <li key={prod.id} className="displayProduct" style={{background:prod.color}}><span className="carteProduitTitre">{prod.titre}</span><img src={prod.image} className="imageProduit" alt="Logo"/><br/><button className="btn_shop">Shop Now<img src={iconeBtn} alt="icone" className="icone_btn"></img></button></li>
         ))
     }
     </ul>
