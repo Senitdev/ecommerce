@@ -1,4 +1,9 @@
 
+import { useState } from "react";
+import { Button, Modal } from "react-bootstrap";
+import iconeArrow from "../../assets/images/popularproduct/arrow-repeat.svg";
+import iconeHeart from "../../assets/images/popularproduct/chevron-double-right.svg";
+import info from "../../assets/images/popularproduct/info-circle.svg";
 import panier from "../../assets/images/popularproduct/panier.png";
 import product1 from "../../assets/images/popularproduct/product-1-2.png";
 import product10 from "../../assets/images/popularproduct/product-10-2.png";
@@ -12,6 +17,9 @@ import product8 from "../../assets/images/popularproduct/product-8-2.png";
 import product9 from "../../assets/images/popularproduct/product-9-2.png";
 import "../../components/popularProduct/popularproduct.css";
 export const PopularProduct=()=>{
+    const[show,setShow]=useState(false);
+    const handleClose=()=>setShow(false);
+    const handleShow=()=>setShow(true);
 const ListProdut=[
     {
         titre:"Seeds of Change Organic Quinoa, Brown, & Red Rice",
@@ -113,6 +121,13 @@ const ListProdut=[
         id:10
     },
 ]
+const[id,setId]=useState(0);
+const HandleClic=(id)=>{
+setShow(true);
+setId(id);
+}
+
+
 return<div className="popularProduct">
     <p id="pTitre">Popular Product</p>
     <ul className="menuPopular">
@@ -128,13 +143,40 @@ return<div className="popularProduct">
         {
             ListProdut.map((produit)=>(
                <li key={produit.id} className="cadrePopular1">
-                <div><ul id="option">
-                </ul></div>
+                <ul id="option">
+                    <li><img src={info} alt="logo" onClick={()=>HandleClic(produit.id)}></img></li>
+                    <li ><img src={iconeArrow} alt="logo" onClick={()=>HandleClic(produit.id)}></img></li>
+                    <li><img src={iconeHeart} alt="logo" onClick={()=>HandleClic(produit.id)}></img></li>
+                </ul>
                 <img src={produit.image} alt="logo" className="imagePopular"></img><br/><span className="popular_categorie">{produit.categorie}</span><br/><span className="titlePopular">{produit.titre}</span><br/><span className="priceNormal">${produit.prix} <span className="prixPromotion">${produit.promotion}</span></span><button className="btn_addShop"><img src={panier} alt="iconePanier" className="Iconepanier"></img>Add</button></li> 
             ))
         }
     </ul>
 
-    
+    {/*Modal */}
+    <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+         
+        <div className="cadrePopular1">
+         <p>Id produit:{id}</p>
+          <ul>
+            {
+                <li>Photo image</li>
+            }
+          </ul>
+        </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
 }

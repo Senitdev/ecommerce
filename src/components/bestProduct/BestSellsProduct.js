@@ -1,4 +1,4 @@
-import { CarouselProvider, Slide, Slider } from 'pure-react-carousel';
+import Carousel from 'react-bootstrap/Carousel';
 import product1 from "../../assets/images/popularproduct/product-1-2.png";
 import product10 from "../../assets/images/popularproduct/product-10-2.png";
 import product2 from "../../assets/images/popularproduct/product-2-2.png";
@@ -113,30 +113,51 @@ export  const BestSellsProduct=()=>{
         },
     ]
     return<div className='menuBestsells'>
-        <CarouselProvider
-        naturalSlideWidth={60}
-        naturalSlideHeight={100}
-        totalSlides={2}
-        isPlaying
-      >
+      
     <p id="ptitre1">Daily Best Sells</p>
     <ul className='menuBestsells1'>
         <li>Featured</li>
         <li>Popular</li>
         <li>New added</li>
     </ul>
-    <Slider>
-    <Slide index={0}>
+    {/*
         <ul className="menuBestsells2">
            {
             ListProdut.map((prod)=>(
                 <li key={prod.id} className="cadreBest"><img src={prod.image} alt="Produit" className="imageBest"></img> <br/>{prod.titre}</li>
             ))
            }
-        </ul>
-        </Slide>
-        </Slider>
-        </CarouselProvider>
+        </ul>*/}
+    <Carousel data-bs-theme="Dark">
+      <Carousel.Item>
+      <ul className="menuBestsells2">
+           {
+            ListProdut.map((prod)=>(
+                <li key={prod.id} className="cadreBest"><img src={prod.image} alt="Produit" className="imageBest"></img> <br/>{prod.titre}</li>
+            ))
+           }
+           </ul>
+        <Carousel.Caption>
+          <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <Carousel.Caption>
+          <h5>Second slide label</h5>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <ul className="menuBestsells2">
+           {
+            ListProdut.map((prod)=>(
+                <li key={prod.id} className="cadreBest"><img src={prod.image} alt="Produit" className="imageBest"></img> <br/>{prod.titre}</li>
+            ))
+           }
+           </ul>
+      </Carousel.Item>
+    </Carousel>
+       
     </div>
     
 }

@@ -122,17 +122,17 @@
     top:130px;
     left: 60px;
     border-radius: 5px;
-   display:flex;
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-around;
     z-index: 10;
     overflow: hidden;
+    background-color: white;
+    border:1px solid green;
    
 }
-#option>img{
-    width: 50%;
-    overflow: hidden;
-}
+
+
 .iconeView{
     width: 30px;
     margin:2px;
@@ -141,8 +141,9 @@
 }
 .cadrePopular1:hover{
     #option{
-        border: 1px solid #3BB77E;
-        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
     }
 }
 .bestSells{
@@ -163,4 +164,24 @@ CarouselProvider{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+#option>li{
+    position:relative;
+    right:15%;
+    padding:1px;
+    background-color:transparent;
+}
+
+
+
+#option>li:hover{
+   background-color: transparent;
+   transform: scale(1.6);
+
+}
+.testP{
+    background-color:red;
+    width: 100%;
+    position: relative;
+    top: 500px;
 }

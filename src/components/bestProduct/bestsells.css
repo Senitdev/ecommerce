@@ -9,30 +9,35 @@
     cursor: pointer;
     margin: 10px;
 }
-.menuBestsells2{
-    width: 97%;
-    position: absolute;
+
+.menuBestsells{
+    position:absolute;
     bottom: 200px;
     padding-left: 45px;
     display: flex;
     flex-wrap: wrap;
-
     flex-direction: row;
     margin: 10px;
     cursor: pointer;
     margin: 10px;
+    background-color: red;
+    width: 100%;
+}
+.menuBestsells2{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
 }
 #ptitre1{
-    width: 20%;
     font-size: 30px;
     color: black;
     font-weight: 700;
+    width: 35%;
 }
 .cadreBest{
     height: auto;
     padding: 10px;
     margin: 10px;
-    width: 300px;
     border-radius: 15px;
     border: 1px solid gainsboro;
     background-color: aquamarine;

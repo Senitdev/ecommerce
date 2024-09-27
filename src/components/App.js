@@ -3,7 +3,7 @@ import Headers from './header/Headers';
 function App() {
   return (
     <>
-  <Headers/>
+   <Headers/>
     </>
   );
 }

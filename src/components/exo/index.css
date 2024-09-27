@@ -1,0 +1,50 @@
+.btn_statut{
+width: 100px;
+position: relative;
+height: 35px;
+border-top-left-radius: 15px;
+border-bottom-right-radius: 15px;
+background-color: brown;
+bottom: 79px;
+right: 8px;
+}
+.produit{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.titre{
+    width: 200px;
+    padding: 5px;
+    border:1px solid crimson;
+    margin: 5px;
+    border-radius: 5px;
+    height: 200px;
+    
+}
+li{
+    list-style: none;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    float: right;
+    flex-direction: row;
+    justify-content:right;
+    margin: 5px;
+}
+.toggle_menu{
+    width: 50px;
+    height: 30px;
+    background-color: green;
+}
+.drowpdown_menu{
+    width: 50%;
+    box-shadow: 10px 5px 5px rgb(240, 237, 237);
+    color:black;
+}
+.menuDrop:hover{
+background:bisque;
+cursor: pointer;
+color: rgb(51, 45, 45);
+}
