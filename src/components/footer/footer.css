@@ -1,0 +1,42 @@
+.footer_m1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    top: 60px;
+}
+.footer_col-2,.footer_col-3,.footer_col-4,.footer_col-5{
+    width: 17%;
+    margin: 5px;
+   font-size: 15px;
+   font-family: 'Times New Roman', Times, serif;
+}
+.footer_col-1{
+width: 300px;
+padding-top: 10px;
+}
+.footer_menu:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(149, 212, 149);
+    transform: scale(1.1.2);
+}
+.libelle_menu{
+    font-size: 28px;
+    font-family:'Arial, Helvetica, sans-serif';
+    font-weight: 700;
+
+}
+#titre_m1{
+   
+    font-family: 'Times New Roman', Times, serif;
+}
+#_titreSvg{
+font-weight: 700;
+margin: 5px;
+font-family: 'Times New Roman', Times, serif;
+}
+.info_m1:hover{
+background-color: white;
+color: black;
+}

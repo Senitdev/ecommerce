@@ -1,0 +1,13 @@
+.mobile_logo{
+    width:50%;
+}
+.mobile_logo:hover{
+    cursor: pointer;
+    background-color: white;
+}
+.menu_mobileDrop{
+    background-color: brown;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}

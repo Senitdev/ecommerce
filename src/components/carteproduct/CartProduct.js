@@ -30,7 +30,7 @@ export default function CartProduct(){
     <ul className="carteproduct">
     {
         Product.map((prod)=>(
-            <li key={prod.id} className="displayProduct" style={{background:prod.color}}><span className="carteProduitTitre">{prod.titre}</span><img src={prod.image} className="imageProduit" alt="Logo"/><br/><button className="btn_shop">Shop Now<img src={iconeBtn} alt="icone" className="icone_btn"></img></button></li>
+            <li key={prod.id} className="displayProduct" style={{background:prod.color}}><span className="carteProduitTitre">{prod.titre}</span><img src={prod.image} className="imageProduit" alt="Logo"/><br/><button className="btn_shop" >Shop Now<img src={iconeBtn} alt="icone" className="icone_btn"></img></button></li>
         ))
     }
     </ul>

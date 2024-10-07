@@ -42,7 +42,7 @@
     height: auto;
     padding: 10px;
     margin: 10px;
-    border-radius: 15px;
+    border-radius: 20px;
     border: 1px solid gainsboro;
 }
 .imagePopular{
@@ -97,7 +97,7 @@
 .popular_categorie{
     margin-top: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:grey;
+    color:rgb(132, 204, 132);
     font-size: 15px;
 }
 .optionProduct{
@@ -108,6 +108,7 @@
     border-radius: 5px;
     background-color: aqua;
     padding-bottom: 10px;
+
 }
 
 .Iconepanier{
@@ -127,8 +128,7 @@
     justify-content: space-around;
     z-index: 10;
     overflow: hidden;
-    background-color: white;
-    border:1px solid green;
+
    
 }
 
@@ -184,4 +184,15 @@ CarouselProvider{
     width: 100%;
     position: relative;
     top: 500px;
+}
+.btn_statut{
+width: 80px;
+position:relative;
+background-color: #3BB77E;
+height: 32px;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+bottom:268px;
+right:10px;
+border: 1px solid white;
 }

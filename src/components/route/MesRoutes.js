@@ -1,24 +1,25 @@
 import { createBrowserRouter, Outlet } from "react-router-dom";
-import Headers from "../header/Headers";
+import Layout from "../Layout";
 import { About } from "../pages/About";
 import { Account } from "../pages/Account";
 import { Contact } from "../pages/Contact";
 import { ForgetPassword } from "../pages/ForgetPassword";
+import { Home } from "../pages/home/Home";
 import { Login } from "../pages/Login";
 import { Page404 } from "../pages/Page404";
 import { PrivacyPolicy } from "../pages/PrivacyPolicy";
 import { Register } from "../pages/Register";
 import { ResetPassword } from "../pages/ResetPassword";
-import { TermeService } from "../pages/TermeService";
 const AppLayout=()=>{
     <>
+    <Layout/>
      <Outlet/> 
     </>
 };
 export const MesRoutes=createBrowserRouter([
 {
     path:"/",
-    Element:<Headers/>,
+    Element:<AppLayout/>,
     errorElement:<Page404/>,
     Children:[
         {
@@ -57,9 +58,9 @@ export const MesRoutes=createBrowserRouter([
             Element:<ResetPassword/>
         },
         {
-            path:"/terme",
-            Element:<TermeService/>
+            path:"/",
+            Element:<Home/>
         }
     ]
 }
-])
+]);

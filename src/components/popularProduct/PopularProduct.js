@@ -1,9 +1,7 @@
 
 import { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
-import iconeArrow from "../../assets/images/popularproduct/arrow-repeat.svg";
-import iconeHeart from "../../assets/images/popularproduct/chevron-double-right.svg";
-import info from "../../assets/images/popularproduct/info-circle.svg";
+import { Rating } from "react-simple-star-rating";
 import panier from "../../assets/images/popularproduct/panier.png";
 import product1 from "../../assets/images/popularproduct/product-1-2.png";
 import product10 from "../../assets/images/popularproduct/product-10-2.png";
@@ -16,10 +14,12 @@ import product7 from "../../assets/images/popularproduct/product-7-2.png";
 import product8 from "../../assets/images/popularproduct/product-8-2.png";
 import product9 from "../../assets/images/popularproduct/product-9-2.png";
 import "../../components/popularProduct/popularproduct.css";
+import { DataStore } from "../Data/DataStore";
 export const PopularProduct=()=>{
     const[show,setShow]=useState(false);
     const handleClose=()=>setShow(false);
     const handleShow=()=>setShow(true);
+    const ProductData=<DataStore type={"test"}/>
 const ListProdut=[
     {
         titre:"Seeds of Change Organic Quinoa, Brown, & Red Rice",
@@ -29,6 +29,7 @@ const ListProdut=[
         promotion:32.8,
         auteur:"NestFood",
         statut:"Hot",
+        background:'rgb(240, 105, 132)',
         id:1
     },
     {
@@ -39,6 +40,7 @@ const ListProdut=[
         promotion:55.8,
         auteur:"Stouffer",
         statut:"Sale",
+        background:'rgb(156, 156, 228)',
         id:2
     },
     {
@@ -49,6 +51,7 @@ const ListProdut=[
         promotion:52.8,
         auteur:"StarKist",
         statut:"New",
+        background:'rgb(106, 235, 73)',
         id:3
     },
     {
@@ -59,6 +62,7 @@ const ListProdut=[
         promotion:52.8,
         auteur:"NestFood",
         statut:"",
+        background:"red",
         id:4
     },
     {
@@ -69,6 +73,7 @@ const ListProdut=[
         promotion:25.8,
         auteur:"NestFood",
         statut:"-14%",
+        background:'rgba(221, 78, 78, 0.486)',
         id:5
     },
     {
@@ -79,6 +84,7 @@ const ListProdut=[
         promotion:55.8,
         auteur:"NestFood",
         statut:"",
+        background:"red",
         id:6
     },
     {
@@ -88,7 +94,8 @@ const ListProdut=[
         prix:32.85,
         promotion:33.8,
         auteur:"NestFood",
-        statut:" ",
+        statut:"",
+        background:"red",
         id:7
     },
     {
@@ -99,6 +106,7 @@ const ListProdut=[
         promotion:37.8,
         auteur:"NestFood",
         statut:"Sale",
+        background:'rgb(156, 156, 228)',
         id:8
     },
     {
@@ -109,6 +117,7 @@ const ListProdut=[
         promotion:25.8,
         auteur:"Old El Paso",
         statut:"Hot",
+        background:'rgb(240, 105, 132)',
         id:9
     },
     {
@@ -118,6 +127,8 @@ const ListProdut=[
         prix:22.85,
         promotion:24.85,
         auteur:"Tyson",
+        statut:"",
+        background:"red",
         id:10
     },
 ]
@@ -143,12 +154,15 @@ return<div className="popularProduct">
         {
             ListProdut.map((produit)=>(
                <li key={produit.id} className="cadrePopular1">
+                
                 <ul id="option">
+                    {/*
                     <li><img src={info} alt="logo" onClick={()=>HandleClic(produit.id)}></img></li>
                     <li ><img src={iconeArrow} alt="logo" onClick={()=>HandleClic(produit.id)}></img></li>
                     <li><img src={iconeHeart} alt="logo" onClick={()=>HandleClic(produit.id)}></img></li>
-                </ul>
-                <img src={produit.image} alt="logo" className="imagePopular"></img><br/><span className="popular_categorie">{produit.categorie}</span><br/><span className="titlePopular">{produit.titre}</span><br/><span className="priceNormal">${produit.prix} <span className="prixPromotion">${produit.promotion}</span></span><button className="btn_addShop"><img src={panier} alt="iconePanier" className="Iconepanier"></img>Add</button></li> 
+                */}
+                    </ul>
+                <img src={produit.image} alt="logo" className="imagePopular"></img>{produit.statut!=="" && <button className="btn_statut" style={{background:produit.background}}>{produit.statut}</button>} <br/><span className="popular_categorie">By {produit.categorie}</span><br/><span className="titlePopular">{produit.titre}</span><br></br><Rating initialValue={5} fillColor="rgb(230, 230, 81)" size={25}></Rating><br></br><span className="priceNormal">${produit.prix} <span className="prixPromotion">${produit.promotion}</span></span><button className="btn_addShop"><img src={panier} alt="iconePanier" className="Iconepanier"></img>Add</button></li> 
             ))
         }
     </ul>

@@ -10,9 +10,9 @@ import { default as redApple, default as strabery } from "../../assets/images/ca
 import snack from "../../assets/images/catslide/cat-3.png";
 import blackplum from "../../assets/images/catslide/cat-4.png";
 import custard from "../../assets/images/catslide/cat-5.png";
-import { BestSellsProduct } from '../bestProduct/BestSellsProduct';
 import "../carteSlide/slidecategorie.css";
 import CartProduct from '../carteproduct/CartProduct';
+import { Deals } from '../dealsDay/Deals';
 import { PopularProduct } from '../popularProduct/PopularProduct';
 export const SlideCategorie=()=>{
     const liste=[
@@ -127,8 +127,9 @@ export const SlideCategorie=()=>{
 <CartProduct/>
 {/*Popular Product*/}
 <PopularProduct/>
-{/*Best sells */}
-<BestSellsProduct/>
+<Deals/>
+{/*Best sells 
+<BestSellsProduct/>*/}
     </div>
     </>
 }

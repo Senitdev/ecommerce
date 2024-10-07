@@ -4,6 +4,7 @@ header{
     height:80px;
     margin: auto;
     padding: 15px 0px;
+    position: relative;
 }
 header .headerSearch{
     width: 35%;
@@ -63,7 +64,7 @@ header .headerSearch .searchIcon{
      bottom:50px;
     
 }
-.iconeHeader li:hover{
+.iconeHeader>li:hover{
     cursor: pointer;
     background: white;
     color: black;
@@ -100,3 +101,9 @@ header .headerSearch .searchIcon{
     color: rgb(188, 207, 188);
     cursor: pointer;
 }
+@media screen and(max-width:400px) {
+   header{
+    background-color: red;
+   }
+
+   }

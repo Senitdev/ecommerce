@@ -34,6 +34,6 @@
     padding: 5px;
 }
 li:hover{
-    background: #3bb77e;
-    color: #fff;
+    color: rgb(194, 238, 194);
+    cursor: pointer;
 }

@@ -1,10 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Headers from './header/Headers';
+import { RouterProvider } from 'react-router-dom';
+import { MesRoutes } from './route/MesRoutes';
 function App() {
   return (
-    <>
-   <Headers/>
-    </>
+    <div>
+  {/*<Headers/>*/}
+  <RouterProvider router={MesRoutes}/>
+    </div>
   );
 }
 

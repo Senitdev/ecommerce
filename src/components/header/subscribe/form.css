@@ -22,7 +22,7 @@ input:focus{
     width: 120px;
     height: 64px;
     color: white;
-    background-color: green;
+    background-color:#3BB77E;
     border-radius: 30px;
     margin: 5px;
     position: relative;
@@ -31,5 +31,6 @@ input:focus{
     border: 2px solid white;
 }
 .btn-subscribe:hover{
-    background-color: green;   
+    background-color:#21ec8d;   
+    border: 1px solid white;
 }

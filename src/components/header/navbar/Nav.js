@@ -5,7 +5,7 @@ import iconeArrow from '../../../assets/images/angle-down-solid.svg';
 import iconehot from '../../../assets/images/icon-hot.svg';
 import MegaMenu from '../megamenu/MegaMenu';
 import '../navbar/Nav.css';
-const Nav=()=>{
+const Nav=({tag})=>{
   const[openMenuHome,setopenMenuHome]=useState(false);
   const[openMenuShop,setopenMenuShop]=useState(false);
   const[openMenuVendor,setopenMenuVendor]=useState(false);
@@ -66,7 +66,13 @@ const handleMenuPages=()=>{
     setopenMenuBlog(false);
     setopenMegaMenu(false);
 }
-return<div className="navBar">
+let nameClass="";
+if(tag==="Desktop"){
+nameClass="navBar"
+}else{
+    nameClass="navTablette"
+}
+return<div className={nameClass}>
 <Button className='btn-allcategore'>All Categories</Button>
 <ClickAwayListener onClickAway={()=>handleClose()} >
 <ul>

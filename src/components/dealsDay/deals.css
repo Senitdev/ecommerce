@@ -1,0 +1,206 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+.deals{
+    position: relative;
+    bottom:650px;
+}
+.displayBanner{
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+.banner:hover{
+    background-color: white;
+    color: black;
+}
+.banner{
+ border-radius: 20px;
+ border: 2px solid white;
+ width: 300px;
+ margin:5px;
+ 
+}
+.imgBanner{
+    width: 100%;
+    border-radius: 20px;
+}
+#titreBanner{
+    position: relative;
+    font-weight: 900;
+    width: 98%;
+    font-style: normal;
+    font-size:16px;
+    font-family: 'Times New Roman', Times, serif;
+    left: 10px;
+    top:10px;
+    text-align: justify;
+}
+.cadreBannier{
+    width: 93%;
+    position: relative;
+    margin-left: 8px;
+    height: 200px;
+    bottom: 80px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 12px 12px 2px 1px whitesmoke;
+}
+.cadreBannier:hover{
+    color: black;
+    transform: scale(1,1.1);
+    font-size: 16px;
+}
+#titreDeals{
+    font-size: 30px;
+    color: black;
+     position: relative;
+     left: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#lienTitre{
+    text-align: center;
+    position: relative;
+    left: 70%;
+    font-size: 16px;
+}
+#lienTitre:hover{
+    color: green;
+    cursor: pointer;
+}
+
+.btn_cart{
+    position: relative;
+    height: 32px;
+    background-color: #8fe9bf;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    width: 80px;
+    border: 1px solid white;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.btn_cart:hover{
+    background-color: rgb(71, 148, 71);
+}
+
+/* Bas bottom  Top silling */
+.deals_bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.menu_top:hover{
+    background-color: white;
+    color: black;
+}
+.top_trait{
+    width: 150%;
+    background:rgb(173, 235, 173);
+    height: 2.5px;
+    
+}
+/*Design sous menu*/
+.silling,.pending,.top,.added{
+width: 25%;
+height: 300px;
+margin: 5px;
+}
+
+
+.product_menu{
+    display: flex;
+    flex-direction: row;
+}
+.image_menu{
+    width: 25%;
+    border-radius: 5px;
+    border: 1px solid rgb(247, 243, 243);
+    margin: 5px;
+    background-color: red;
+}
+.col_m1{
+    display: flex;
+    flex-direction: row;
+}
+.col_m1:hover{
+    background-color: white;
+    color: black;
+    position: relative;
+    padding-top: 5px;
+    bottom:5px;
+    cursor: pointer;
+}
+/*Stay home */
+.stay_home{
+    width: 95%;
+    height: 400px;
+    position: relative;
+    top:70px;
+    left: 25px;
+    background-color: rgb(213, 240, 213);
+    padding: 5px;
+    margin: 8px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.menu_banner{
+    width: 50%;
+}
+.titre_banner{
+    width:60% ;
+    margin: 5px;
+}
+#titre_menu1{
+font-size: 35px;
+font-family: 'Times New Roman', Times, serif;
+font-weight: 700;
+width: 45%;
+}
+#titre_menu2{
+color: rgb(114, 109, 109);
+}
+/*Menu avant le footer avec les icones*/
+.menu_icone{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    top: 70px;
+}
+.iconeMenu{
+    width: 30%;
+    margin: 5px;
+    padding: 5px;
+   
+}
+.iconeMenu:hover{
+    transform: scale(1,1.1);
+}
+.md-12{
+    border: 1px solid crimson;
+}
+.md-4{
+    background-color: #e5f7ee;
+    margin: 8px;
+    width: 18.4%;
+    height: 115px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+}
+.md-4:hover{
+    background-color:#e5f7ee;
+}
+#_titre1,#_titre:hover{
+   font-weight: 600;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 20px;
+   padding-bottom: 15px;
+   color: black;
+}
+#_titre2{
+    font-size: 15px;
+    color: rgb(119, 99, 99);
+}

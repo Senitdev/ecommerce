@@ -1,0 +1,44 @@
+.cart_menu{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction:column;
+    float:right;
+    position: absolute;
+    top:90px;
+    box-shadow: 5px 5px 5px 3px rgb(160, 158, 158,02);
+    border-radius: 5px;
+    right:20px;
+    z-index: 150;
+}
+.cart_menu>ul>li:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+ul>li:hover{
+    background-color: white;
+}
+#btn_view{
+    border:2px solid green;
+    height: 38px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 100px;
+}
+#btn_view:hover,#btn_checkout:hover{
+    background-color: rgb(236, 190, 103);
+
+}
+#btn_checkout{
+    border: 2px solid green;
+    height: 38px;
+    margin: 5px;
+    border-radius: 5px;
+    color:white;
+    background-color: green;
+    width: 100px;
+}
