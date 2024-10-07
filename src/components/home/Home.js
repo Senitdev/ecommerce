@@ -1,8 +1,8 @@
 import "../home/home.css";
 import Layout from "../Layout";
 const Home=()=>{
-    return<div>
+return<div>
 <Layout/>
-    </div>
+</div>
 
 }

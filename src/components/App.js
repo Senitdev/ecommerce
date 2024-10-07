@@ -1,13 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { RouterProvider } from 'react-router-dom';
-import { MesRoutes } from './route/MesRoutes';
+import Headers from "../components/header/Headers";
 function App() {
-  return (
-    <div>
-  {/*<Headers/>*/}
-  <RouterProvider router={MesRoutes}/>
-    </div>
-  );
+  <div>
+    <Headers/>
+  </div>
 }
 
 export default App;

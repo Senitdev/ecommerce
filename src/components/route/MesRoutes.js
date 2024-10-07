@@ -4,7 +4,6 @@ import { About } from "../pages/About";
 import { Account } from "../pages/Account";
 import { Contact } from "../pages/Contact";
 import { ForgetPassword } from "../pages/ForgetPassword";
-import { Home } from "../pages/home/Home";
 import { Login } from "../pages/Login";
 import { Page404 } from "../pages/Page404";
 import { PrivacyPolicy } from "../pages/PrivacyPolicy";
@@ -31,8 +30,7 @@ export const MesRoutes=createBrowserRouter([
             Element:<Account/>
         },
         {
-            path:"/contact",
-            Element:<Contact/>
+            path:"/contact",Component:<About/>
         },
         {
             path:"/forgetpassword",
@@ -59,7 +57,7 @@ export const MesRoutes=createBrowserRouter([
         },
         {
             path:"/",
-            Element:<Home/>
+            Element:<Contact/>
         }
     ]
 }
