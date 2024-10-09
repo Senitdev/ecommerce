@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom";
 import { Rating } from "react-simple-star-rating";
 import banner01 from "../../assets/deals/banner-5.png";
 import banner02 from "../../assets/deals/banner-6.png";
@@ -27,6 +28,7 @@ import { FooterBottom } from "../footer/bottom/FooterBottom";
 import { Footer } from "../footer/Footer";
 import { FormSubscribe } from "../header/subscribe/FormSubscribe";
 export const Deals=()=>{
+    let location=useLocation;
     const listeImage=[
         {
             id:1,

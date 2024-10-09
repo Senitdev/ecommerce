@@ -2,6 +2,7 @@ import { ClickAwayListener } from "@mui/base";
 import { useMediaQuery } from "@uidotdev/usehooks";
 import React, { useState } from "react";
 import { Badge, Dropdown } from "react-bootstrap";
+import { Link, useLocation } from "react-router-dom";
 import cart from '../../assets/images/icon-cart.svg';
 import compart from '../../assets/images/icon-compare.svg';
 import wishlist from '../../assets/images/icon-heart.svg';
@@ -40,15 +41,16 @@ const handleSearch=(e)=>{
   const[openMenuMobile,setOpenMenuMobile]=useState(false);
   //Gestion panier contenu
   const[openCart,setOpenCart]=useState(false);
-
+   let location=useLocation();
     return<>
+  
   <ClickAwayListener onClickAway={handleClicAnywhere}>
     <header>
     {  isSmallDevice===false && 
     <div className="container-fluid">
       <div className='row'>
         <div className='col-sm-2'>
-            <img src={logo} alt="Logo"/>
+           <Link to="/"> <img src={logo} alt="Logo"/></Link>
         </div>
         {/*headerSearch start here*/}
         <div className="headerSearch">
@@ -90,12 +92,12 @@ const handleSearch=(e)=>{
             </div>
             
 }
+
 {/*slider start*/}
-<HomeSlider/>
-<SlideCategorie/>
+{location.pathname==="/" &&<div><HomeSlider/> <SlideCategorie/></div> }
+{/*{location.pathname!=="/" &&<span style={{position:'relative',paddingTop:'70%'}}><Footer/></span>}*/}
       </div>
-      
-     
+
     </div>
 }
 {

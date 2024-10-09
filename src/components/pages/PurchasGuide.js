@@ -1,5 +1,5 @@
 import "../pages/css/purchasguide.css";
-export const PurchasGuide=()=>{
+export default function PurchasGuide(){
     return<>
     <h1>Purchage guide</h1>
     </>

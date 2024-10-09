@@ -1,6 +1,7 @@
 import { ClickAwayListener } from '@mui/base';
 import { useState } from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import iconeArrow from '../../../assets/images/angle-down-solid.svg';
 import iconehot from '../../../assets/images/icon-hot.svg';
 import MegaMenu from '../megamenu/MegaMenu';
@@ -148,7 +149,7 @@ openMenuShop===true &&
 <div className='dropdownPages'>
     <ul>
         <li>About Us</li>
-        <li>Contact</li>
+        <li><Link to="/contact">Contact</Link></li>
         <li>My Account</li>
         <li>Login</li>
         <li>Register</li>

@@ -1,32 +1,32 @@
 import { createBrowserRouter, Outlet } from "react-router-dom";
-import Layout from "../Layout";
 import { About } from "../pages/About";
 import { Account } from "../pages/Account";
-import { Contact } from "../pages/Contact";
 import { ForgetPassword } from "../pages/ForgetPassword";
 import { Login } from "../pages/Login";
-import { Page404 } from "../pages/Page404";
 import { PrivacyPolicy } from "../pages/PrivacyPolicy";
 import { Register } from "../pages/Register";
 import { ResetPassword } from "../pages/ResetPassword";
 const AppLayout=()=>{
-    <>
-    <Layout/>
+    return<>
+     <ul>
+        <li>Link 1</li>
+        <li>Link 2</li>
+        <li>Link 3</li>
+     </ul>
      <Outlet/> 
     </>
 };
-export const MesRoutes=createBrowserRouter([
+export const router=createBrowserRouter([
 {
-    path:"/",
+    path:"/about",
     Element:<AppLayout/>,
-    errorElement:<Page404/>,
     Children:[
         {
-            path:"/about",
+            path:'about',
             Element:<About/>
         },
         {
-            path:"/account",
+            path:'/account',
             Element:<Account/>
         },
         {
@@ -55,10 +55,6 @@ export const MesRoutes=createBrowserRouter([
             path:"/reset",
             Element:<ResetPassword/>
         },
-        {
-            path:"/",
-            Element:<Contact/>
-        }
     ]
 }
 ]);

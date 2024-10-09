@@ -1,8 +1,11 @@
 import "../home/home.css";
-import Layout from "../Layout";
-const Home=()=>{
+export default function Home(){
 return<div>
-<Layout/>
+<ul>
+    <li>Hom1</li>
+    <li>About</li>
+    <li>Contact</li>
+</ul>
 </div>
 
 }
