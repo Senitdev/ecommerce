@@ -31,7 +31,13 @@ font-size: 15px;
 padding-top: 12px;
 padding-left: 6px;
 }
-
+a{
+text-decoration: none;
+color: black;
+}
+a:hover{
+    color:rgb(126, 250, 126);
+}
 header .headerSearch .search{
 width: 80%;
 }

@@ -33,7 +33,3 @@
     list-style: none;
     padding: 5px;
 }
-li:hover{
-    color: rgb(194, 238, 194);
-    cursor: pointer;
-}

@@ -1,8 +1,7 @@
 .slidecategorie{
     width: 100%;
-    height: auto;
     position: relative;
-    top:120px;
+    top:100px;
 }
 .slide_titre{
     width: 60%;

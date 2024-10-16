@@ -4,12 +4,6 @@ import banner01 from "../../assets/deals/banner-5.png";
 import banner02 from "../../assets/deals/banner-6.png";
 import banner03 from "../../assets/deals/banner-7.png";
 import banner04 from "../../assets/deals/banner-8.png";
-import banner9 from "../../assets/deals/menu/banner-9.png";
-import iconeSvg1 from "../../assets/deals/menu/icon-1.svg";
-import iconeSvg2 from "../../assets/deals/menu/icon-2.svg";
-import iconeSvg3 from "../../assets/deals/menu/icon-3.svg";
-import iconeSvg4 from "../../assets/deals/menu/icon-4.svg";
-import iconeSvg5 from "../../assets/deals/menu/icon-5.svg";
 import thumbnail1 from "../../assets/deals/menu/thumbnail-1.jpg";
 import thumbnail10 from "../../assets/deals/menu/thumbnail-10.jpg";
 import thumbnail11 from "../../assets/deals/menu/thumbnail-11.jpg";
@@ -24,10 +18,8 @@ import thumbnail8 from "../../assets/deals/menu/thumbnail-8.jpg";
 import thumbnail9 from "../../assets/deals/menu/thumbnail-9.jpg";
 import panier from "../../assets/images/popularproduct/panier.png";
 import '../dealsDay/deals.css';
-import { FooterBottom } from "../footer/bottom/FooterBottom";
-import { Footer } from "../footer/Footer";
-import { FormSubscribe } from "../header/subscribe/FormSubscribe";
-export const Deals=()=>{
+import MenuBest from "./MenuBest";
+export default function Deals(){
     let location=useLocation;
     const listeImage=[
         {
@@ -196,20 +188,11 @@ export const Deals=()=>{
         <div className="added"><Test product={productMenuAdded}></Test></div>
         <div className="top"><Test product={productMenuTop}/></div>
         </span>
-        <div className="stay_home">
-            <div className="titre_banner">
-                <p id="titre_menu1">Stay home & get your daily
-                needs from our shop</p>
-                <p id="titre_menu2">Start You'r Daily Shopping with Nest Mart</p>
-                <FormSubscribe/>
-            </div>
-         <img src={banner9} alt="Banner" className="menu_banner"></img>
         
-        </div>
         {/*Menu best price & offer- Free delivery - Great daily -Wide */}
         <MenuBest/>
-        <Footer/>
-        <FooterBottom/>
+      {/*<Footer/>
+        <FooterBottom/>*/}
     </div>
 }
 function Test({product=[]}){
@@ -223,53 +206,4 @@ return<>
     }
 </ul>
 </>
-}
-function MenuBest(){
-    const ProductData=[
-        {
-            id:1,
-            titre:"Best prices & offers",
-            image:iconeSvg1,
-            statut:"Orders $50 or more"
-        },
-        {
-            id:2,
-            titre:"Free delivery",
-            image:iconeSvg2,
-            statut:"24/7 amazing services"
-        },
-        {
-            id:3,
-            titre:"Great daily deal",
-            image:iconeSvg3,
-            statut:"When you sign up"
-        },
-        {
-            id:4,
-            titre:"Wide assortment",
-            image:iconeSvg4,
-            statut:"Mega Discounts"
-        },
-        {
-            id:5,
-            titre:"Easy returns",
-            image:iconeSvg5,
-            statut:"Within 30 days"
-        },
-    ]
-    return<>
-    <ul className="menu_icone">
-        {
-            ProductData.map((data)=>(
-                <li key={data.id} className="md-4">
-                <img src={data.image} alt="icone" className="iconeMenu"></img>
-                <div className="iconeTitre">
-                <span id="_titre1"><p>{data.titre}</p></span> 
-                <span id="_titre2">{data.statut}</span>
-                    </div>
-                </li>
-            ))
-        }
-    </ul>
-    </>
 }

@@ -1,10 +1,14 @@
+import { useLocation } from "react-router-dom";
 import Iconeclock from "../../assets/footer/icon-clock.svg";
 import Iconecall from "../../assets/footer/icon-contact.svg";
 import Iconeemail from "../../assets/footer/icon-email-2.svg";
 import Iconelocation from "../../assets/footer/icon-location.svg";
 import logo from "../../assets/footer/logo.svg";
+import MenuBest from "../dealsDay/MenuBest";
 import "../footer/footer.css";
-export const Footer=()=>{
+import { FooterBottom } from "./bottom/FooterBottom";
+export const Footer=({tag})=>{
+    let location=useLocation();
     const DatainfoSociete=[
         {
             id:1,
@@ -168,11 +172,13 @@ export const Footer=()=>{
 
     ]
 return<div className="footer_m1">
+{location.pathname!=="/" && <MenuBest/>}
 <div className="footer_col-1"><InfoSciete DataInfo={DatainfoSociete}></InfoSciete></div>
 <div className="footer_col-2"><FiltreProduit product={productfooter} tag={"about"} titre={"Compagny"}/></div>
 <div className="footer_col-3"><FiltreProduit product={productfooter} tag={"account"} titre={"Acount"}/></div>
 <div className="footer_col-4"><FiltreProduit product={productfooter} tag={"corporate"} titre={"Corporate"}/></div>
 <div className="footer_col-5"><FiltreProduit product={productfooter} tag={"popular"} titre={"Popular"}/></div>
+<FooterBottom/>
 </div>
 }
 function FiltreProduit({product=[],tag,titre}){

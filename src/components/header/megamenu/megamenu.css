@@ -5,6 +5,7 @@
     background-color: white;
     text-align: start;
     cursor: pointer;
+    z-index: 10;
 }
 .titre{
     font-size: 20px;

@@ -3,7 +3,7 @@ form{
     top: 250px;
     left:20px;
 }
-input {
+._subscribe>input {
     border: 1px solid #dbd9d9;
     border-radius: 30px;
     height: 63px;
@@ -14,7 +14,7 @@ input {
     width: 325px;
     background-color: white;
 }
-input:focus{
+._subscribe>input:focus{
     border: 1px solid white;
     outline: none;
 }

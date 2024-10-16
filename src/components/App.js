@@ -6,11 +6,13 @@ import { About } from './pages/About';
 import { Account } from './pages/Account';
 import { ForgetPassword } from './pages/ForgetPassword';
 import { Login } from './pages/Login';
-import { PrivacyPolicy } from './pages/PrivacyPolicy';
+import Page404 from './pages/Page404';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 import PurchasGuide from './pages/PurchasGuide';
 import { Register } from './pages/Register';
 import { ResetPassword } from './pages/ResetPassword';
-import TermeService from './pages/TermeService;';
+import TermeService from './pages/TermeService';
+import ViewCart from './pages/shop/ViewCart';
 const router=createBrowserRouter([
 
   {
@@ -46,16 +48,25 @@ const router=createBrowserRouter([
     element:<ResetPassword/>
   },
   {
-    path:"/purchasse",
+    path:"/purchase",
     element:<PurchasGuide/>
   },
   {
     path:"/privacy",
     element:<PrivacyPolicy/>
   },
+
   {
     path:"/termes",
     element:<TermeService/>
+  },
+  {
+    path:"/pageError",
+    element:<Page404/>
+  },
+  {
+    path:"/viewcart",
+    element:<ViewCart/>
   }
  ]
 }]);

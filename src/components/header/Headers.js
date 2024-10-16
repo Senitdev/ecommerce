@@ -95,7 +95,7 @@ const handleSearch=(e)=>{
 
 {/*slider start*/}
 {location.pathname==="/" &&<div><HomeSlider/> <SlideCategorie/></div> }
-{/*{location.pathname!=="/" &&<span style={{position:'relative',paddingTop:'70%'}}><Footer/></span>}*/}
+
       </div>
 
     </div>
@@ -112,6 +112,7 @@ const handleSearch=(e)=>{
   </ul>
 
   {openMenuMobile===true && <div><MenuDropDown/></div>}
+
   </div>
 }
     </header>

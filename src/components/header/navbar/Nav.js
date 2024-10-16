@@ -79,7 +79,7 @@ return<div className={nameClass}>
 <ul>
     <li><img src={iconehot} alt="icone arrow down" className="iconehot"/>Deals</li>
     <li onMouseOver={()=>handlClic()}>Home<img src={iconeArrow} alt="icone arrow down" className="iconeDown"/></li>
-    <li>About <img src={iconeArrow} alt="icone arrow down" className="iconeDown"/></li>
+    <li><Link to="/about">About</Link> <img src={iconeArrow} alt="icone arrow down" className="iconeDown"/></li>
     <li onMouseOver={()=>handleShop()}>Shop <img src={iconeArrow} alt="icone arrow down" className="iconeDown"/></li>
     <li onMouseOver={()=>handleVendor()}>Vendor <img src={iconeArrow} alt="icone arrow down" className="iconeDown"/></li>
     <li onMouseOver={()=>handleMegaMenu()}>Mega Menu <img src={iconeArrow} alt="icone arrow down" className="iconeDown"/></li>
@@ -148,17 +148,17 @@ openMenuShop===true &&
 {openMenuPages===true &&
 <div className='dropdownPages'>
     <ul>
-        <li>About Us</li>
+        <li><Link to="/about">About Us</Link></li>
         <li><Link to="/contact">Contact</Link></li>
-        <li>My Account</li>
-        <li>Login</li>
-        <li>Register</li>
-        <li>Forgot password</li>
-        <li>Reset password</li>
-        <li>Purchase Guide</li>
-        <li>Privacy Policy</li>
-        <li>Terms of Service</li>
-        <li>404 Page</li>
+        <li><Link to="/account">My Account</Link></li>
+        <li><Link to="/login">Login</Link></li>
+        <li><Link to="/register">Register</Link></li>
+        <li><Link to="/forget">Forgot password</Link></li>
+        <li><Link to="/reset">Reset password</Link></li>
+        <li><Link to="/purchase">Purchase Guide</Link></li>
+        <li><Link to="/privacy">Privacy Policy</Link></li>
+        <li><Link to="/termes">Terms of Service</Link></li>
+        <li><Link to="/pageError">404 Page</Link></li>
     </ul>
 </div>
 }

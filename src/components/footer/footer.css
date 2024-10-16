@@ -3,9 +3,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
-    top:30px;
-    
+    z-index: 0;
+    top:20px;
 }
+
 .footer_col-2,.footer_col-3,.footer_col-4,.footer_col-5{
     width: 17%;
     margin: 5px;

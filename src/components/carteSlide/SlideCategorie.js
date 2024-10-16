@@ -12,7 +12,7 @@ import blackplum from "../../assets/images/catslide/cat-4.png";
 import custard from "../../assets/images/catslide/cat-5.png";
 import "../carteSlide/slidecategorie.css";
 import CartProduct from '../carteproduct/CartProduct';
-import { Deals } from '../dealsDay/Deals';
+import Deals from '../dealsDay/Deals';
 import { PopularProduct } from '../popularProduct/PopularProduct';
 export const SlideCategorie=()=>{
     const liste=[

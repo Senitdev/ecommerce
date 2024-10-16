@@ -71,27 +71,33 @@ body{
 .dropdownHome{
     left: 410px;
     top: 60px;
+    z-index: 105;
 }
 /*DropDown Shop*/
 .dropdownShop{
     left: 650px;
     top: 80px;
+    z-index: 105;
 }
 /**dropDownVendor*/
 .dropdownVendor{
     left: 750px;
     top: 80px;
+    z-index: 105;
 }
 /**dropDownBlog*/
 .dropdownBlog{
     right: 100px;
     top: 83px;
+    z-index: 105;
 }
 /**DropdownPages*/
 .dropdownPages{
     right: 20px;
     top: 83px;
     padding: 5px;
+    background-color:white;
+    z-index: 105;
 }
 /*Mega Menu Drop Down*/
 .dropdownMega{
@@ -103,6 +109,7 @@ body{
     margin: 5px;
     top: 100px;
     box-shadow: 3px 3px 6px 2px rgb(160, 158, 158,02);
+    z-index: 105;
 }
 /**Support center*/
 .supportCenter{
