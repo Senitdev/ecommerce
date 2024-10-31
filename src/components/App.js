@@ -1,9 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Contact from "../components/pages/Contact";
+import ExoReducer from './exo/ExoReducer';
 import Layout from './home/Layout';
 import { About } from './pages/About';
 import { Account } from './pages/Account';
+import Cours from './pages/Cours';
 import { ForgetPassword } from './pages/ForgetPassword';
 import { Login } from './pages/Login';
 import Page404 from './pages/Page404';
@@ -67,6 +69,14 @@ const router=createBrowserRouter([
   {
     path:"/viewcart",
     element:<ViewCart/>
+  },
+  {
+    path:"/exercice",
+    element:<Cours/>
+  },
+  {
+    path:"/exercice2",
+    element:<ExoReducer/>
   }
  ]
 }]);

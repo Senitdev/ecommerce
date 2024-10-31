@@ -48,10 +48,6 @@ const DataFiltre=[];
 
    })
     }
-    const handleClic=()=>{
-     console.log(Data);
-     setOpen(false);
-    }
     return<>
     {openComposant===true &&<div className="cart_menu">
     <ul>
@@ -64,7 +60,7 @@ const DataFiltre=[];
     <p style={{color:"gray", fontWeight:"900", fontFamily:"sans serif"}}>Total : {Total()}</p>
     <hr/>
     <ul style={{display:"flex", flexDirection:"column"}}>
-     <li><button id="btn_view" onClick={()=>handleClic()}><Link to="/viewcart">View Cart</Link></button><button id="btn_checkout">Checkout</button></li>
+     <li><button id="btn_view" onClick={()=>setOpen(false)}><Link to="/viewcart">View Cart</Link></button><button id="btn_checkout">Checkout</button></li>
     </ul>
     </ul>
  </div>
