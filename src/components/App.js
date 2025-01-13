@@ -2,6 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Contact from "../components/pages/Contact";
 import ExoReducer from './exo/ExoReducer';
+import TestClientKafka from './exo/KafkaClient';
+import AppChat from './exo/chat/AppChat';
 import Layout from './home/Layout';
 import { About } from './pages/About';
 import { Account } from './pages/Account';
@@ -77,6 +79,14 @@ const router=createBrowserRouter([
   {
     path:"/exercice2",
     element:<ExoReducer/>
+  },
+  {
+    path:"/kafka",
+    element:<TestClientKafka/>
+  },
+  {
+    path:"/chat",
+    element:<AppChat/>
   }
  ]
 }]);
